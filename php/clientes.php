@@ -20,20 +20,20 @@
  				<form class="m-b-sm"> 
 	 				<div class="step-pane active" id="step1">
 	 					<div class="panel-body">
-							<div class="panel-body">
-								<div class="panel">
-								<form id="demo-dropzone" action="#" class="dropzone dz-clickable">
-									<div class="dz-default dz-message">
-										<div class="dz-icon icon-wrap icon-circle icon-wrap-md">
-											<i class="fa fa-cloud-upload fa-3x"></i>
-										</div>
-										<div>
-											<p class="dz-text">Drop files to upload</p>
-											<p class="text-muted">or click to pick manually</p>
-										</div>
-									</div>
-								</form>
-							</div>
+	 						<div class="dropzone">
+							<form action="/file-upload" class="dropzone">
+							  <div class="fallback">
+							    <input name="file" type="file" multiple />
+							  </div>
+							</form>
+							<div id="dz-preview-template" class="dz-preview dz-file-preview">
+    <div class="dz-details">
+        <div class="dz-filename"><span data-dz-name></span></div>
+        <div class="dz-size" data-dz-size></div>
+        <img data-dz-thumbnail />
+    </div>
+    <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+</div>
 							</div>
 						</div>
 	 				</div> 
